@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# source: https://github.com/rstudio/shiny-server/wiki/Building-Shiny-Server-from-Source#installation
 # Clone the repository from GitHub
 git clone https://github.com/rstudio/shiny-server.git
 
