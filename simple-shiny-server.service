@@ -1,0 +1,15 @@
+[Unit]
+Description=ShinyServer
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/shiny-server
+
+# Environment="LANG=en_US.UTF-8"
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStopPost=/bin/sleep 5
+RestartSec=1
+
+
+[Install]
+WantedBy=multi-user.target
