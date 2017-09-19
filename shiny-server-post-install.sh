@@ -12,3 +12,6 @@ sudo mkdir -p /srv/shiny-server
 sudo mkdir -p /var/lib/shiny-server
 sudo chown shiny /var/log/shiny-server
 sudo mkdir -p /etc/shiny-server
+
+sudo cp shiny-server-onstartup.sh /etc/init.d/shiny-server
+sudo chown -v +x shiny-server
