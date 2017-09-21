@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 # source: https://github.com/rstudio/shiny-server/wiki/Building-Shiny-Server-from-Source#installation
+
+# Build cmake from source
+wget http://www.cmake.org/files/v2.8/cmake-2.8.11.2.tar.gz
+tar xzf cmake-2.8.11.2.tar.gz
+cd cmake-2.8.11.2
+./configure
+make
+sudo make install
+
 # Clone the repository from GitHub
 git clone https://github.com/rstudio/shiny-server.git
 
