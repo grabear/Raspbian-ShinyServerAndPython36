@@ -27,3 +27,7 @@ install_github('ayayron/shinydnd')
 install_github("Appsilon/shiny.semantic")
 install_github("rstudio/miniUI")
 install_github('zachcp/msaR')
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("ggtree")
+biocLite("cummeRbund")
