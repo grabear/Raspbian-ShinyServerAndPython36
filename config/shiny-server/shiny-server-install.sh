@@ -16,8 +16,10 @@ sudo apt-key adv --keyserver keys.gnupg.net --recv-key 'E19F5F87128899B192B1A2C2
 sudo apt-get update
 sudo apt-get install r-base r-base-dev
 
-sudo apt-key add --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-# Clone the repository from GitHub
+# Install R packages
+Rscript requirements.R
+
+# Clone the shiny-server repository from GitHub
 git clone https://github.com/rstudio/shiny-server.git
 
 # Get into a temporary directory in which we'll build the project
