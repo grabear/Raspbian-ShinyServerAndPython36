@@ -13,8 +13,8 @@ sudo mkdir -p /var/lib/shiny-server
 sudo chown shiny /var/log/shiny-server
 sudo mkdir -p /etc/shiny-server
 
-sudo cp default.config /etc/init.d/shiny-server
-sudo chown -v +x shiny-server
+sudo cp default.config /etc/shiny-server/shiny-server.conf
+sudo chown sbiny +x /etc/shiny-server/shiny-server.conf
 
 sudo cp shiny-server.service /etc/systemd/system/shiny-server.service
-sudo chown -v +x /etc/systemd/system/shiny-server.service
+sudo chown shiny +x /etc/systemd/system/shiny-server.service
