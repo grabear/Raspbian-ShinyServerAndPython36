@@ -1,25 +1,15 @@
 #!/usr/bin/env bash
 # source: https://github.com/rstudio/shiny-server/wiki/Building-Shiny-Server-from-Source#installation
+# Update the system
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
-# Build cmake from source
-wget http://www.cmake.org/files/v2.8/cmake-2.8.11.2.tar.gz
-tar xzf cmake-2.8.11.2.tar.gz
-cd cmake-2.8.11.2
-./configure
-make
-sudo make install
-
-# Install R
-sudo echo "deb http://http://mirrors.nics.utk.edu/cran/bin/linux/debian stretch-cran34/" >> /etc/apt/sources.list
-sudo cat /etc/apt/sources.list
-sudo apt-key adv --keyserver keys.gnupg.net --recv-key 'E19F5F87128899B192B1A2C2AD5F960A256A04AF'
-sudo apt-get update
-sudo apt-get -y install r-base r-base-dev
-
-# Install R packages
-Rscript requirements.R
+# Install R and R packages
+. ../R/R-install.sh
 
 # Clone the shiny-server repository from GitHub
+mkdir -p -- "~/GitHub"
+cd ~/GitHub
 git clone https://github.com/rstudio/shiny-server.git
 
 # Get into a temporary directory in which we'll build the project
@@ -50,3 +40,7 @@ mkdir ../build
 
 # Install the software at the predefined location
 sudo make install
+
+# Update the system
+sudo apt-get -y update
+sudo apt-get -y upgrade
