@@ -5,7 +5,13 @@
 ####
 ####
 
+# Update system
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
 # Download and install Python 3.6
+DIR=`pwd`
+cd ~/Downloads/
 wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz
 tar xf Python-3.6.2.tar.xz
 cd Python-3.6.2
@@ -23,3 +29,10 @@ sudo apt-get -y --purge remove libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
 sudo apt-get -y autoremove
 sudo apt-get -y clean
 
+# Install python packages
+cd $DIR
+pip install -r requirements.txt
+
+# Update system
+sudo apt-get -y update
+sudo apt-get -y upgrade
