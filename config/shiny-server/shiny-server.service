@@ -4,6 +4,7 @@ Description=ShinyServer
 [Service]
 Type=simple
 ExecStart=/usr/bin/shiny-server
+Restart=always
 
 # Environment="LANG=en_US.UTF-8"
 ExecReload=/bin/kill -HUP $MAINPID
