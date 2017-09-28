@@ -16,5 +16,6 @@ sudo mkdir -p /etc/shiny-server
 sudo cp default.config /etc/shiny-server/shiny-server.conf
 sudo chown sbiny +x /etc/shiny-server/shiny-server.conf
 
-sudo cp shiny-server.service /etc/systemd/system/shiny-server.service
-sudo chown shiny +x /etc/systemd/system/shiny-server.service
+sudo cp shiny-server.service /lib/systemd/system/shiny-server.service
+sudo chown shiny +x /lib/systemd/system/shiny-server.service
+sudo systemctl enable shiny-server.service
