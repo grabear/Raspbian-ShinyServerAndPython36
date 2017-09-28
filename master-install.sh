@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# These must be installed before Python 3.6 and/or R can be installed
+# These must be installed before Python 3.6.2 and/or R can be installed
 # Install apt packages
 . config/apt/apt-install.sh
 
@@ -12,7 +12,7 @@
 . config/shiny-server/shiny-server-install.sh
 . config/shiny-server/shiny-server-post-install.sh
 
-# Install python 3.6 and python packages
-. config/python-3.6/py36-install.sh
+# Install python 3.6.2 and python packages
+. config/python-3.6.2/py3.6.2-install.sh
 
 sudo reboot
