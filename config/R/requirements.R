@@ -7,5 +7,4 @@ install_github(c("cstubben/euPMC", "robear22890/shinyLP", "mkuhn/dict", 'ayayron
 
 # Bioconductor packages
 source("https://bioconductor.org/biocLite.R")
-biocLite("ggtree")
-biocLite("cummeRbund")
+biocLite(c("ggtree", "cummeRbund"))
