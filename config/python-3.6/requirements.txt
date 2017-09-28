@@ -1,0 +1,5 @@
+pandas>=0.19.2
+slacker==0.9.42
+biopython==1.70
+cookiecutter==1.5.1
+sciluigi==0.9.5b6
