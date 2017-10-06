@@ -19,7 +19,7 @@ All of the following software will be installed with master-install.sh:
     * `build-essential`, `tk-dev`, `libncurses5-dev`, `libncursesw5-dev`, `libreadline6-dev`, `libdb5.3-dev`, `libgdbm-dev`, `libsqlite3-dev`, `libssl-dev`, `libbz2-dev`, `libexpat1-dev`, `liblzma-dev`, `zlib1g-dev`
 * R and R packages
   * **CRAN**
-    * `devtools`, `shiny`, `shinythemes`, `shinyBS`, `shinyjs`, `europepmc`, `DT`, `data.table`, `markdown`, `rclipboard`, `shinycssloaders`, `shinydashboard`, 'shinyFiles', `shinyFeedback`,`shinyHeatmaply`, `shinyjqui`, `shinyWidgets`, `bsplus`, `colourpicker`
+    * `devtools`, `shiny`, `shinythemes`, `shinyBS`, `shinyjs`, `europepmc`, `DT`, `data.table`, `markdown`, `rclipboard`, `shinycssloaders`, `shinydashboard`, `shinyFiles`, `shinyFeedback`,`shinyHeatmaply`, `shinyjqui`, `shinyWidgets`, `bsplus`, `colourpicker`
   * **GitHub**
     * `cstubben/euPMC`, `robear22890/shinyLP`, `mkuhn/dict`, `ayayron/shinydnd`, `Appsilon/shiny.semantic`, `rstudio/miniUI`, `zachcp/msaR`
   * **Bioconductor**
