@@ -68,6 +68,7 @@ Alternatively, you can rewrite the requirements.txt file to fit your own needs.
 **Note:** _At the time of writing this guide Python 3.6.2 was the latest release.  If a newer release is available via the python [website](https://www.python.org/downloads/source/), then please make a pull request that changes the various file names and code.  You may also feel free to manually change them yourself._
 
 # R Installation
+
 To install R:
 ```bash
 pi@raspberrypi $ . master-R-install.sh
