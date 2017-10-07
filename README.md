@@ -1,7 +1,7 @@
-# Installation of Shiny Server and Python 3.6.0 on Raspbian for Raspberry Pi
+# Install Shiny Server and Python 3.6.0 on Raspbian
 
 ## Overview
-The purpose for this project is to simplify the installation of Shiny Server and Python on the Raspian OS for Raspberry Pi.  
+The purpose for this project is to install Shiny Server and Python on the Raspian OS for Raspberry Pi.  
 
 ## Pre-Requisites:
 The current setup has been tested on [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/) with a Raspberry Pi 3 Model B.  The installation will take some time; especially over wifi. It is recommended to run this over ethernet.
