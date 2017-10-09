@@ -34,11 +34,13 @@ The following software will be installed with the full installation:
     * cookiecutter == 1.5.1
     * sciluigi == 0.9.5b6
 
+
 #### To run full installation:
 ```bash
 pi@raspberrypi $ . master-install.sh
 ```
 ## Python 3.6.2 Installation
+
 _Python 3.6.2 installation on Raspbian was inspired by
 [this Gist](https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f)._
 
@@ -50,7 +52,6 @@ pi@raspberrypi $ . master-python3.6.2-install.sh
 This installation script also installs the PyPI packages in requirements.txt file.
 If you do not desire these packages, then comment out the following lines in the py3.6.2-install.sh file:
 ```python
-...
 sudo apt-get -y autoremove
 sudo apt-get -y clean
 
@@ -100,5 +101,6 @@ RestartSec=1
 WantedBy=multi-user.target
 ```
 ___
+
 ## Future Release Features
 *  R-Studio-Server Installation
