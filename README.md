@@ -34,11 +34,11 @@ The following software will be installed with the full installation:
     * cookiecutter == 1.5.1
     * sciluigi == 0.9.5b6
 
-
 #### To run full installation:
 ```bash
 pi@raspberrypi $ . master-install.sh
 ```
+
 ## Python 3.6.2 Installation
 
 _Python 3.6.2 installation on Raspbian was inspired by
@@ -84,8 +84,7 @@ _Shiny-Server installation on Raspbian was inspired by R-Studio's guide [here](h
 pi@raspberrypi $ . master-shiny-server-install.sh
 ```
 
-After shiny server is installed it will automatically run on reboot.  In order to
-remove this functionality comment out the following lines in the shiny-server.service file:
+After shiny server is installed it will automatically run on reboot. In order to remove this functionality comment out the following lines in the shiny-server.service file:
 ```bash
 [Service]
 Type=simple
@@ -95,7 +94,6 @@ ExecStart=/usr/bin/shiny-server
 ExecReload=/bin/kill -HUP $MAINPID
 ExecStopPost=/bin/sleep 5
 RestartSec=1
-
 
 [Install]
 WantedBy=multi-user.target
